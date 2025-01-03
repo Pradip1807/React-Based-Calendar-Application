@@ -67,112 +67,116 @@ calendar-app/
 ```bash
 git clone https://github.com/Pradip1807/React-Based-Calendar-Application.git
 cd React-Based-Calendar-Application
-
----
+```
 
 
 ### 2. Install Dependencies
 ```bash
 npm install
+```
 
 ### 3. Start the Development Server
 ```bash
 npm start
-
+```
 Access the application at http://localhost:3000.
 
 ### 4. Build for Production
 ```bash
 npm run build
-
+```
 The optimized build will be located in the /build directory.
 
-Deployment Details
-Live Application URL
+# Deployment Details
+## Live Application URL
 The application is deployed and accessible at: Live App on Vercel
 
-Steps to Deploy:
-On Vercel/Netlify:
-Connect your GitHub repository.
-Deploy the project directly from the repository.
-Static Hosting (e.g., GitHub Pages):
-Run npm run build.
-Upload the /build folder to a static hosting platform.
-Usage Instructions
+## Steps to Deploy:
+## On Vercel/Netlify:
+- Connect your GitHub repository.
+- Deploy the project directly from the repository.
+# Static Hosting (e.g., GitHub Pages):
+- Run npm run build.
+- Upload the /build folder to a static hosting platform.
+- Usage Instructions
 Admin Dashboard
 URL: http://localhost:3000/admin
-Features:
-Add, edit, and delete tasks/events.
-View color-coded task statuses.
-User Dashboard
+## Features:
+- Add, edit, and delete tasks/events.
+- View color-coded task statuses.
+- User Dashboard
 URL: http://localhost:3000/user
-Features:
-View assigned tasks and events.
-Access tooltips for additional details.
-Endpoints for CRUD Operations
-Tasks Endpoints:
+## Features:
+- View assigned tasks and events.
+- Access tooltips for additional details.
+- Endpoints for CRUD Operations
+# Tasks Endpoints:
 
-Get All Tasks
+## Get All Tasks
 
-Method: GET
-Endpoint: /api/tasks
-Response:
-json
-Copy code
+- Method: GET
+- Endpoint: /api/tasks
+- Response:
+- json
+```bash 
 [
     { "id": 1, "title": "Submit Proposal", "status": "Due" },
     { "id": 2, "title": "Follow-up Meeting", "status": "Overdue" }
 ]
-Create a Task
+```
+## Create a Task
 
-Method: POST
-Endpoint: /api/tasks
-Payload:
-json
-Copy code
+- Method: POST
+- Endpoint: /api/tasks
+- Payload:
+- json
+```bash 
 { "title": "New Task", "dueDate": "2025-01-05", "status": "Due" }
-Update a Task
+```
+## Update a Task
 
-Method: PUT
-Endpoint: /api/tasks/:id
-Payload:
-json
-Copy code
+- Method: PUT
+- Endpoint: /api/tasks/:id
+- Payload:
+- json
+```bash
 { "title": "Updated Task", "status": "Completed" }
-Delete a Task
+```
+# Delete a Task
 
-Method: DELETE
-Endpoint: /api/tasks/:id
-Sample Data
+- Method: DELETE
+- Endpoint: /api/tasks/:id
+```bash
 ID	Title	Due Date	Status
 1	Submit Proposal	2025-01-05	Due
 2	Follow-up Meeting	2024-12-30	Overdue
 3	Code Review	2024-12-28	Completed
-Testing and Validation
-Local Testing:
-Open http://localhost:3000 after starting the server.
-Navigate to /admin and /user for testing.
-Browser Testing:
-Verify responsiveness on mobile and desktop.
-Unit Testing:
-Use Jest and React Testing Library for component testing.
-End-to-End Testing:
-Use tools like Cypress or Playwright.
-Known Limitations
-Uses mock data instead of a live backend.
-Role-based authentication simulated but not implemented securely.
-Enhancements and Future Improvements
-Backend Integration: Add RESTful API and JWT-based authentication.
-Database: Replace mock data with MySQL or MongoDB.
-UI Improvements: Use Material-UI or Tailwind CSS.
-Calendar Component: Integrate libraries like FullCalendar.js.
-Credentials for Login
+```
+1. Testing and Validation
+- Local Testing: Open http://localhost:3000 after starting the server.
+- Navigate to /admin and /user for testing.
+2. Browser Testing:
+- Verify responsiveness on mobile and desktop.
+3. Unit Testing:
+- Use Jest and React Testing Library for component testing.
+4. End-to-End Testing:
+- Use tools like Cypress or Playwright.
+- Known Limitations
+- Uses mock data instead of a live backend.
+- Role-based authentication simulated but not implemented securely.
+- Enhancements and Future Improvements
+- Backend Integration: Add RESTful API and JWT-based authentication.
+5. Database: Replace mock data with MySQL or MongoDB.
+6. UI Improvements: Use Material-UI or Tailwind CSS.
+7. Calendar Component: Integrate libraries like FullCalendar.js.
+## Credentials for Login
+```bash
 Role	Username	Password
 Admin	admin@demo.com	admin123
 User	user@demo.com	user123
-Contact and Support
+```
+## Contact and Support
 For any issues or queries, please contact:
-
 Email: kumarpradip1807@gmail.com
 
 ### Steps to Upload `README.md`:
@@ -182,6 +186,7 @@ Email: kumarpradip1807@gmail.com
    git add README.md
    git commit -m "Add README file"
    git push origin main
+   ```
 Verify it on your GitHub repository page.
 Let me know if you need further assistance!
 
